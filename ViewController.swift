@@ -86,7 +86,9 @@ class ViewController: UIViewController {
     }
     
     @IBAction func getSqrt(_ sender: UIButton) {
-
+	x = sqrt(x)
+	resultLabel.text = "\(x)"
+	x = 0
     }
     
     @IBAction func getPi(_ sender: UIButton) {
