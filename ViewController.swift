@@ -78,8 +78,11 @@ class ViewController: UIViewController {
         resultLabel.text = "\(Int(x))"
         x = 0
     }
-    @IBAction func getPower(_ sender: UIButton) {
 
+    @IBAction func getPower(_ sender: UIButton) {
+    x = pow(x,2)
+    resultLabel.text = "\(x)"
+    x = 0
     }
     
     @IBAction func getSqrt(_ sender: UIButton) {
